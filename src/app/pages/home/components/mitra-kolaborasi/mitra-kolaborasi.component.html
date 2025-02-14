@@ -1,0 +1,23 @@
+<section class="section-wrapper">
+  <div class="lg:space-y-2">
+    <span class="label-section">PARTNER</span>
+    <h3 class="title-section">
+      Mitra
+      <span class="highlight">Kolaborasi </span>
+    </h3>
+  </div>
+
+  <div class="mitra-content">
+    <div class="scroll-track">
+      <div *ngFor="let item of mitra" class="mitra-item">
+        <img [src]="item.src" [alt]="item.alt" />
+      </div>
+    </div>
+
+    <div class="scroll-track">
+      <div *ngFor="let item of mitra" class="mitra-item">
+        <img [src]="item.src" [alt]="item.alt" />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+.section-wrapper {
+  @apply space-y-8 lg:space-y-12;
+}
+
+.highlight {
+  @apply relative inline-block
+  after:-z-10 after:absolute after:inset-0 after:-top-px after:lg:top-1 after:-left-px 
+  after:w-[105px] after:lg:w-[200px] after:h-[30px] after:lg:h-9 after:bg-gradient-to-r from-[#FDD574];
+}
+
+.testimonials-container {
+  @apply w-full flex flex-col justify-center items-center gap-4;
+}
+
+.testimonials-mobile {
+  @apply w-full flex lg:hidden justify-between md:justify-center items-center md:gap-6;
+}
+
+.testimonials-mobile button {
+  @apply p-2 text-dark-400 cursor-pointer transition-colors ease-out duration-300;
+}
+
+.testimonials-mobile .testimonials-slider {
+  @apply relative w-[250px] max-w-96 h-fit overflow-hidden;
+}
+
+.testimonials-mobile .slider-track {
+  @apply w-full flex transition-transform ease-out duration-300;
+}
+
+.avatar {
+  @apply w-10 lg:w-[50px] h-10 lg:h-[50px] flex-shrink-0 bg-primary-300 rounded-full;
+}
+
+.testimonials-desktop {
+  @apply hidden lg:flex justify-center items-center gap-8 xl:gap-[72px];
+}
+
+.testimonials-desktop .desktop-item {
+  @apply relative lg:w-72 xl:w-[300px] h-[68px] flex justify-center items-center gap-2 xl:gap-4 text-dark-400 cursor-pointer;
+}
+
+.testimonials-comment {
+  @apply h-52 md:h-36 xl:h-28 lg:px-10 text-center text-body-xs md:text-body-md xl:text-body-lg text-dark-400;
+}
+
+.highlight-indicator {
+  @apply z-10 absolute -bottom-[18px] w-60 xl:w-[330px] h-1 bg-primary-600;
+}
+
+.divider {
+  @apply relative w-full h-px bg-[#7B96B5];
+}
+
+.highlight-indicator-mobile {
+  @apply block lg:hidden absolute inset-1/2 -translate-x-1/2 -top-0.5 w-[200px] h-1 bg-primary-600;
+}

@@ -1,0 +1,24 @@
+.card {
+  @apply w-full max-w-[410px] min-h-[278px] p-6 space-y-8 bg-neutral-white border border-dark-25 hover:border-primary-500 rounded-2xl transition-colors ease-out duration-300 cursor-pointer;
+}
+
+.card-header,
+.card-profile {
+  @apply flex gap-4;
+}
+
+.card-profile {
+  @apply w-full items-center;
+}
+
+.links-group {
+  @apply flex items-center gap-2;
+}
+
+.link-item {
+  @apply w-10 h-10 p-2 place-items-center place-content-center bg-dark-25 rounded-lg;
+}
+
+.link-item > svg {
+  @apply hover:text-primary-500 transition-colors ease-out duration-300;
+}

@@ -1,0 +1,92 @@
+nav {
+  @apply z-50 fixed top-0  w-full p-5 lg:py-6 lg:px-12 xl:px-[72px] flex justify-between items-center transition-all ease-out duration-300;
+}
+
+.nav-logo img {
+  @apply w-[100px] lg:w-40;
+}
+
+.nav-menu-icon {
+  @apply relative w-6 h-6 flex lg:hidden flex-col justify-center items-center flex-shrink-0 gap-1.5;
+}
+
+.nav-menu-icon > div {
+  @apply w-full h-0.5 bg-grey-1 rounded-full transition-all ease-out duration-300;
+}
+
+.nav-menu-icon.open-menu > div:nth-child(1) {
+  @apply transform translate-y-2 rotate-45;
+}
+
+.nav-menu-icon.open-menu > div:nth-child(2) {
+  @apply opacity-0;
+}
+
+.nav-menu-icon.open-menu > div:nth-child(3) {
+  @apply transform -translate-y-2 -rotate-45;
+}
+
+.nav-wrapper-mobile {
+  @apply absolute inset-0 top-full right-0 w-full h-screen flex lg:hidden flex-col bg-neutral-white;
+}
+
+.nav-wrapper-mobile .auths-group {
+  @apply py-6 px-5 flex items-center gap-3 bg-primary-50;
+}
+
+.nav-wrapper-mobile .auths-group a {
+  @apply w-full;
+}
+
+.nav-wrapper-mobile .links-group {
+  @apply relative px-5 flex flex-col gap-2;
+}
+
+.nav-wrapper-mobile .links-group .menu-web,
+.nav-wrapper-mobile .links-group .menu-navbar {
+  @apply py-4 px-2 w-full;
+}
+
+.nav-wrapper-mobile .links-group .menu-navbar {
+  @apply flex justify-between items-center;
+}
+
+.nav-wrapper-mobile .dropdown-menu {
+  @apply absolute inset-0 top-full left-0 w-full h-fit px-8 flex flex-col;
+}
+
+.nav-wrapper-mobile .dropdown-menu .menu {
+  @apply py-3 px-2.5 w-full text-start rounded-sm;
+}
+
+.nav-wrapper-desktop {
+  @apply hidden lg:flex justify-center items-center gap-7 xl:gap-12;
+}
+
+.nav-wrapper-desktop .links-group {
+  @apply w-[300px] xl:w-80 flex justify-between items-center;
+}
+
+.nav-wrapper-desktop .auths-group {
+  @apply flex justify-center items-center gap-3;
+}
+
+.nav-wrapper-desktop .auths-group a {
+  @apply w-[120px];
+}
+
+.nav-wrapper-desktop .dropdown-menu {
+  @apply absolute top-full w-[200px] flex flex-col items-start bg-neutral-white rounded-sm shadow-md;
+}
+
+.dropdown-menu .menu {
+  @apply w-full py-3.5 px-6 text-start text-dark-400 transition-all ease-out duration-300;
+}
+
+.dropdown-menu .menu:nth-child(1) {
+  @apply text-body-md-medium text-primary-500 bg-primary-50 border-r-4 border-primary-500;
+}
+
+.nav-wrapper-desktop .dropdown-menu .menu {
+  @apply hover:text-primary-500 text-body-md hover:text-body-md-medium hover:bg-primary-50;
+}

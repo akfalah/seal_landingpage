@@ -1,0 +1,22 @@
+<section class="section-wrapper lg:pt-12 lg:pb-24">
+  <div class="space-y-8">
+    <app-breadcrumb />
+
+    <div class="space-y-3">
+      <h2 class="text-h4 lg:text-h2 text-grey-1">Talent Pool</h2>
+      <p class="text-body-sm lg:text-body-lg text-dark-400">
+        Wadah untuk menghubungkan talenta terbaik dengan peluang baru,
+        memperluas jaringan profesional, dan mendukung perjalanan karier mereka
+        dalam membangun masa depan di era transformasi digital.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section-wrapper">
+  <div></div>
+  
+  <div class="card-container">
+    <app-card *ngFor="let talent of talents" [talent]="talent" />
+  </div>
+</section>

@@ -1,0 +1,19 @@
+.highlight {
+  @apply relative inline-block 
+  after:-z-10 after:absolute after:inset-0 after:-top-px after:lg:top-1 after:-left-px 
+  after:w-[94px] after:lg:w-[170px] after:h-[30px] after:lg:h-9 after:bg-gradient-to-r from-[#FDD574];
+}
+
+.card-wrapper {
+  @apply w-full md:w-fit grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-self-center gap-6;
+}
+
+.card {
+  @apply w-full md:w-[306px] h-[204px] md:h-[276px] p-5 lg:p-6 space-y-3 md:space-y-4 border border-grey-5 
+  hover:border-primary-500 rounded-3xl cursor-default [&>p:first-of-type]:hover:text-primary-600 
+  [&>svg_path]:hover:fill-primary-600;
+}
+
+.card, .card p:first-of-type, .card svg path {
+  @apply transition-all ease-out duration-300;
+}

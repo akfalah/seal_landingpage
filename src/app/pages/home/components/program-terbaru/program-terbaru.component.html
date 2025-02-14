@@ -1,0 +1,103 @@
+<section id="program-terbaru" class="section-wrapper">
+  <div class="lg:space-y-2">
+    <span class="label-section">PROGRAM</span>
+    <h3 class="title-section">Program Terbaru</h3>
+  </div>
+
+  <div class="program-content">
+    <div class="images-container no-scrollbar">
+      <div
+        *ngFor="let item of programs"
+        (click)="toggleItem(item.title)"
+        [ngClass]="
+          selectedItem === item.title
+            ? 'w-[268px] lg:w-[368px]'
+            : 'w-[150px] lg:w-[200px]'
+        "
+      >
+        <img [src]="item.image" [alt]="item.title" />
+
+        <div
+          [ngClass]="{
+            'z-10 bg-neutral-black bg-opacity-50': selectedItem !== item.title
+          }"
+          class="absolute top-0 left-0 w-full h-full transition-all ease-out duration-300"
+        ></div>
+
+        <div class="image-title">
+          <p>{{ item.title }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="descriptions-container">
+      <div>
+        <div class="description-header">
+          <h4>{{ selectedItem }}</h4>
+          <div class="program-icon">
+            <img
+              *ngFor="let icon of getSelectedItem()?.icon; let i = index"
+              [src]="icon"
+              alt="icon-{{ i + 1 }}"
+            />
+          </div>
+        </div>
+
+        <div class="">
+          Lorem ipsum dolor sit amet consectetur. Placerat adipiscing neque sit
+          elit. Condimentum ligula eu aenean vitae. Nulla pellentesque morbi
+          interdum mi. Orci eget tellus ut fringilla quisque lorem vestibulum.
+          <ul class="ml-5 list-disc">
+            <li>
+              Pellentesque viverra id imperdiet purus ut pharetra sagittis.
+            </li>
+            <li>Vel mi interdum platea condimentum ut.</li>
+            <li>
+              Ut massa cras quam pharetra non integer nullam in convallis.
+            </li>
+          </ul>
+          Integer lorem pellentesque felis nisi. Cum malesuada euismod et
+          elementum. Scelerisque ut a dui nec proin. Elit et pulvinar et euismod
+          in. Eu gravida elementum praesent ut lectus ut porttitor venenatis
+          ultricies. Nulla.
+        </div>
+      </div>
+
+      <a href="" class="btn-lg btn-primary">Baca Selengkapnya!</a>
+    </div>
+  </div>
+
+  <div
+    class="w-full -z-10 absolute -top-[20%] md:-top-[24%] left-0 overflow-x-hidden"
+  >
+    <svg
+      width="1395"
+      height="567"
+      viewBox="0 0 1395 567"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.35"
+        d="M-140.854 100.834C-99.0392 181.981 67.9603 341.038 401.437 328.084C818.284 311.892 1083.59 329.002 1294.85 466"
+        stroke="url(#paint0_linear_3077_1577)"
+        stroke-width="200"
+        stroke-linecap="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_3077_1577"
+          x1="-372.151"
+          y1="56.6511"
+          x2="734.121"
+          y2="-618.327"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F97D16" />
+          <stop offset="0.380341" stop-color="#FDC074" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>

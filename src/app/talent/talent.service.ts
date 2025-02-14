@@ -16,7 +16,7 @@ export class TalentService {
       description:
         'Placerat eget faucibus eu rhoncus. Scelerisque ornare nisl mattis volutpat. Ut elit sit massa tristique. Convallis ac aliquet tortor lorem et tortor lobortis amet. Blandit ut imperdiet cursus faucibus. Tortor auctor laoreet a ultrices dignissim nunc sit. Vel libero senectus nisl porta massa arcu tellus tempor.',
       aboutProject: `In nullam et et accumsan interdum placerat faucibus. Urna ut ut tristique lacus quam cursus morbi. Suspendisse cum pretium massa euismod. Potenti morbi aliquam mollis ultrices lectus arcu. Nulla nunc at cursus pharetra pharetra augue id tincidunt libero. Vulputate habitant consectetur nec hac quisque ac urna malesuada. Velit sed id bibendum ut pharetra vel ultrices eget.
-        
+
         Elementum morbi eleifend id consectetur vitae amet. Ut venenatis dui justo et velit id nam mattis. Morbi neque at hac in ut aliquet porttitor. Pellentesque amet porttitor lorem diam pellentesque venenatis sed. Fames a interdum a eget viverra urna mauris nibh. Aliquet et tristique mattis feugiat amet. Augue dui volutpat scelerisque eget.
         Ornare dui venenatis lectus ut id eget vitae. Tellus et scelerisque vitae sed ultrices. Montes quisque lacus ipsum et nisi sed vulputate. Nullam cras parturient sit mi convallis.`,
       hardSkill: [

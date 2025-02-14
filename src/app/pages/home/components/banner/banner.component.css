@@ -1,0 +1,71 @@
+.circle-shape {
+  @apply -z-10 absolute -top-64 -left-40 w-[622.34px] h-[622.34px] hidden lg:block bg-primary-500 opacity-25 blur-[150px] rounded-full;
+}
+
+.banner-content {
+  @apply z-10 relative flex flex-col lg:flex-row lg:justify-between gap-8;
+}
+
+.banner-text {
+  @apply order-2 lg:order-1 lg:mt-8 w-full lg:w-80 xl:w-[526px] flex-shrink-0 space-y-6 lg:space-y-10;
+}
+
+.banner-text a {
+  @apply w-full lg:w-fit;
+}
+
+.banner-header {
+  @apply text-center lg:text-start;
+}
+
+.banner-images {
+  @apply order-1 lg:order-2 flex justify-end between-376-1023:justify-center;
+}
+
+.hero-container {
+  @apply relative flex w-fit gap-2.5 md:gap-4 xl:gap-6 between-376-1023:translate-x-[5%];
+}
+
+.hero-container > div {
+  @apply flex flex-col gap-2.5 md:gap-4 xl:gap-6;
+}
+
+.hero-img-1 {
+  @apply relative w-[224.97px] md:w-[372px] xl:w-[525.74px] h-[192.56px] md:h-[317.95px] xl:h-[450px] rounded-ss-[120px];
+}
+
+.hero-img-2 {
+  @apply w-[51.35px] md:w-24 xl:w-[120px] h-[51.35px] md:h-24 xl:h-[120px] rounded-ee-[32px];
+}
+
+.hero-img-3 {
+  @apply w-[64.19px] md:w-28 xl:w-[150px] h-[64.19px] md:h-28 xl:h-[150px] rounded-ss-[32px] rounded-ee-[32px];
+}
+
+.hero-img-group-1 {
+  @apply flex gap-2.5 md:gap-4 xl:gap-6 justify-end;
+}
+
+.hero-img-group-2 {
+  @apply mt-[53.92px] md:mt-[82px] xl:mt-[126px] flex flex-col gap-2.5 md:gap-4 xl:gap-6;
+}
+
+.hero-img-group-1 .hero-deco {
+  @apply w-[51.35px] md:w-24 xl:w-[120px] h-[51.35px] md:h-24 xl:h-[120px] bg-primary-400 rounded-es-full;
+}
+
+.hero-img-group-2 .hero-deco {
+  @apply w-[64.19px] md:w-28 xl:w-[150px] h-[64.19px] md:h-28 xl:h-[150px] bg-blue-500 rounded-e-full;
+}
+
+.hero-caption {
+  @apply hidden xl:block absolute top-[85%] right-0 px-6 text-body-sm-medium text-neutral-white bg-blue-900 rounded-s-full;
+}
+
+.banner img {
+  @apply object-cover object-center;
+}
+
+.hero-container > .hero-deco {
+  @apply absolute -translate-x-[50%] translate-y-[170%] w-[71px] md:w-[116px] xl:w-[166px] h-[71px] md:h-[116px] xl:h-[166px] bg-primary-600 rounded-ee-full;
+}

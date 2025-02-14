@@ -1,0 +1,35 @@
+.profile-container {
+  @apply w-full flex flex-col md:flex-row gap-8;
+}
+
+.profile-image {
+  @apply mx-auto w-[158px] lg:w-[250px] h-[158px] lg:h-[250px] flex-shrink-0 bg-primary-300 rounded-xl place-content-center place-items-center;
+}
+
+.profile-card {
+  @apply w-full p-3 lg:p-6 flex flex-col justify-between gap-4 border border-primary-500 rounded-xl;
+}
+
+.profile-info {
+  @apply flex flex-col md:flex-row items-center gap-4 lg:gap-8;
+}
+
+.profile-info .profile-detail {
+  @apply w-full flex gap-2;
+}
+
+.profile-info .profile-detail > svg {
+  @apply w-6 lg:w-7 h-6 lg:h-7;
+}
+
+.profile-card .links-group {
+  @apply flex flex-wrap items-center gap-2 md:gap-4;
+}
+
+.about-title {
+  @apply text-body-md-bold md:text-body-lg-bold text-grey-1;
+}
+
+.about-content {
+  @apply text-body-sm md:text-body-md text-dark-400;
+}

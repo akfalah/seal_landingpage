@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { TalentComponent } from './pages/talent/talent.component';
-import { TalentPoolComponent } from './pages/talent/pages/talent-pool/talent-pool.component';
-import { TalentDetailComponent } from './pages/talent/pages/talent-detail/talent-detail.component';
+import { HomeComponent } from './pages/home-page/home.component';
+import { TalentComponent } from './pages/talent-page/talent.component';
+import { TalentPoolComponent } from './pages/talent-page/pages/talent-pool/talent-pool.component';
+import { TalentDetailComponent } from './pages/talent-page/pages/talent-detail/talent-detail.component';
 
 export const routes: Routes = [
   {

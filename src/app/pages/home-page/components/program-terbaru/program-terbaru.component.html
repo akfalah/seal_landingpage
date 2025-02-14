@@ -43,24 +43,10 @@
           </div>
         </div>
 
-        <div class="">
-          Lorem ipsum dolor sit amet consectetur. Placerat adipiscing neque sit
-          elit. Condimentum ligula eu aenean vitae. Nulla pellentesque morbi
-          interdum mi. Orci eget tellus ut fringilla quisque lorem vestibulum.
-          <ul class="ml-5 list-disc">
-            <li>
-              Pellentesque viverra id imperdiet purus ut pharetra sagittis.
-            </li>
-            <li>Vel mi interdum platea condimentum ut.</li>
-            <li>
-              Ut massa cras quam pharetra non integer nullam in convallis.
-            </li>
-          </ul>
-          Integer lorem pellentesque felis nisi. Cum malesuada euismod et
-          elementum. Scelerisque ut a dui nec proin. Elit et pulvinar et euismod
-          in. Eu gravida elementum praesent ut lectus ut porttitor venenatis
-          ultricies. Nulla.
-        </div>
+        <div
+          [innerHTML]="getSelectedItem()?.description || template"
+          class="text-body-md text-grey-1"
+        ></div>
       </div>
 
       <a href="" class="btn-lg btn-primary">Baca Selengkapnya!</a>

@@ -31,5 +31,5 @@
 }
 
 .about-content {
-  @apply text-body-sm md:text-body-md text-dark-400;
+  @apply text-body-sm md:text-body-md text-dark-400 whitespace-pre-line;
 }
